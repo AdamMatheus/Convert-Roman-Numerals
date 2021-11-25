@@ -3,11 +3,12 @@ const result = document.getElementById('result');
 const button = document.getElementById('btn');
 
 button.addEventListener('click', cevir);
+
 function cevir() {
 	let enteredNumber = +input.value;
 	console.log(enteredNumber);
 	if (enteredNumber > 3000) {
-		result.innerHTML = 'Please enter a number which is less than 3000!';
+		result.innerHTML = 'Please enter a number which is 1less than 3000!';
 		input.value = '';
 	} else if (enteredNumber == '') {
 		alert('Please enter a number');
